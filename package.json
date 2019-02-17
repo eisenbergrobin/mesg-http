@@ -1,0 +1,14 @@
+{
+  "name": "mesg-http",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mesg-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}

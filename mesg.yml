@@ -1,0 +1,28 @@
+name: mesg-http
+sid: mesg-http
+description: "Simple http fileservice."
+tasks:
+  addRoute:
+    inputs:
+      route:
+        type: String
+      htmlBody:
+        type: String
+    outputs:
+      success:
+        data:
+          message:
+            type: String
+events:
+  started:
+    data:
+      success:
+        type: Boolean
+  route-added:
+    data:
+      route:
+        type: String
+
+configuration:
+  ports:
+  - "8080"
