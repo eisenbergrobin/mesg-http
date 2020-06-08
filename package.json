@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@liteflow/service": "^1.0.7",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "mesg-js": "^2.0.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "prettier": "1.16.4"

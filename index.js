@@ -1,4 +1,4 @@
-const mesg = require("mesg-js").service();
+const liteflow = require("@liteflow/service").service();
 const bodyParser = require("body-parser");
 const app = require("express")();
 const cors = require("cors");
@@ -10,13 +10,13 @@ app.use(bodyParser.json());
 // TODO implement LRU
 const cache = {};
 
-mesg
+liteflow
   .listenTask({
     addRoute: require("./tasks/addRoute")(cache)
   })
   .on("error", error => console.error(error));
 
-mesg
+liteflow
   .emitEvent("started", { success: true })
   .catch(error => console.error(error));
 
